@@ -82,6 +82,7 @@ IF /i "%CHOOSE_X%" == "3" GOTO X3
 IF /i "%CHOOSE_X%" == "2" GOTO X2
 IF /i "%CHOOSE_X%" == "1" GOTO X1
 IF /i "%CHOOSE_X%" == "69" call Secret.bat
+IF /i "%CHOOSE_X%" == "q" call Menu.bat
 GOTO XCHOOSE
 
 :X1
@@ -586,6 +587,7 @@ IF /i "%CHOOSE_O%" == "3" GOTO O3
 IF /i "%CHOOSE_O%" == "2" GOTO O2
 IF /i "%CHOOSE_O%" == "1" GOTO O1
 IF /i "%CHOOSE_O%" == "69" call Secret.bat
+IF /i "%CHOOSE_O%" == "q" call Menu.bat
 GOTO OCHOOSE
 
 :O1
@@ -1104,3 +1106,5 @@ echo ^|       ^|       ^|       ^|       ^|       ^|       ^|       ^|
 echo ^|   %E1%   ^|   %E2%   ^|   %E3%   ^|   %E4%   ^|   %E5%   ^|   %E6%   ^|   %E7%   ^|
 echo ^|       ^|       ^|       ^|       ^|       ^|       ^|       ^|
 echo +-------+-------+-------+-------+-------+-------+-------+
+echo.
+echo type "q" to go back to menu
