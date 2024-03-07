@@ -4,3 +4,5 @@
 Open the "Start Game.bat" file to start the game.
 
 Use the "W" and "S" keys to navigate through the menu. You can confirm your selection with "E" or "Q".
+
+Type "69" in game for a secret!
