@@ -30,7 +30,7 @@ if errorlevel 0 goto GUIMenu
 if "%men1%"=="(" goto Start
 if "%men3%"=="(" goto Einstellungen
 if "%men5%"=="(" goto Credits
-if "%men7%"=="(" goto eof
+if "%men7%"=="(" echo BUGGY
 goto GUIMenu
 
 :GUIMenurunter
