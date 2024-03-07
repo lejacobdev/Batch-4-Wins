@@ -1,5 +1,6 @@
 @echo off
-color a
+set /p Farbe= <color.txt
+color %Farbe%
 cls
 mode con: cols=58 lines=30
 echo Starten Sie jetzt das Spiel! (ENTER)
