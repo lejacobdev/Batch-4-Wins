@@ -63,7 +63,19 @@ if /i "%rule%"=="n" (goto game) else goto anfang
 cls
 echo The Rules:
 echo.
-echo Comming Soon...
+echo.
+echo 2-Player 4 Wins programmed in Batch.
+echo. 
+echo Goal: The first player who have 4 in a row (Vertical, Horizontal, Diagonal)
+echo. 
+echo Open the "Start Game.bat" file to start the game.
+echo. 
+echo Use the "W" and "S" keys to navigate through the menu. You can confirm your selection with "E" or "Q".
+echo. 
+echo In game you need to type a number between 1-7 to throw in. You can quit the game with "q".
+echo You need to confirm your input with the enter key.
+echo. 
+echo Type "69" in game for a secret!
 pause>NUL
 goto game
 
