@@ -82,6 +82,7 @@ IF /i "%CHOOSE_X%" == "4" GOTO X4
 IF /i "%CHOOSE_X%" == "3" GOTO X3
 IF /i "%CHOOSE_X%" == "2" GOTO X2
 IF /i "%CHOOSE_X%" == "1" GOTO X1
+IF /i "%CHOOSE_X%" == "69" call secret.bat
 GOTO XCHOOSE
 
 :X1
@@ -585,6 +586,7 @@ IF /i "%CHOOSE_O%" == "4" GOTO O4
 IF /i "%CHOOSE_O%" == "3" GOTO O3
 IF /i "%CHOOSE_O%" == "2" GOTO O2
 IF /i "%CHOOSE_O%" == "1" GOTO O1
+IF /i "%CHOOSE_X%" == "69" call secret.bat
 GOTO OCHOOSE
 
 :O1
