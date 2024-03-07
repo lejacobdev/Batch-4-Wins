@@ -54,17 +54,16 @@ SET E7=
 :anfang
 cls
 set "Rule="
-echo Wollen Sie jetzt die Regeln lesen? (J/N)
+echo Would you like to read the rules? (Y/N)
 set /p Rule=
-if /i "%rule%"=="j" goto rules
+if /i "%rule%"=="y" goto rules
 if /i "%rule%"=="n" (goto game) else goto anfang
 
 :rules
 cls
-echo Die Regeln:
+echo The Rules:
 echo.
-echo.
-echo xD
+echo Comming Soon...
 pause>NUL
 goto game
 
@@ -74,7 +73,7 @@ CALL :display
 :XCHOOSE
 cls
 CALL :display
-SET /p CHOOSE_X="(X) Waehle eine Reihe zum einwerfen: "
+SET /p CHOOSE_X="(X) Choose a row you want to throw in: "
 IF /i "%CHOOSE_X%" == "7" GOTO X7
 IF /i "%CHOOSE_X%" == "6" GOTO X6
 IF /i "%CHOOSE_X%" == "5" GOTO X5
@@ -82,7 +81,7 @@ IF /i "%CHOOSE_X%" == "4" GOTO X4
 IF /i "%CHOOSE_X%" == "3" GOTO X3
 IF /i "%CHOOSE_X%" == "2" GOTO X2
 IF /i "%CHOOSE_X%" == "1" GOTO X1
-IF /i "%CHOOSE_X%" == "69" call secret.bat
+IF /i "%CHOOSE_X%" == "69" call Secret.bat
 GOTO XCHOOSE
 
 :X1
@@ -578,7 +577,7 @@ goto XCHOOSE
 :OCHOOSE
 cls
 CALL :display
-SET /p CHOOSE_O="(O) Waehle eine Reihe zum einwerfen: "
+SET /p CHOOSE_O="(O) Choose a row you want to throw in: "
 IF /i "%CHOOSE_O%" == "7" GOTO O7
 IF /i "%CHOOSE_O%" == "6" GOTO O6
 IF /i "%CHOOSE_O%" == "5" GOTO O5
@@ -586,7 +585,7 @@ IF /i "%CHOOSE_O%" == "4" GOTO O4
 IF /i "%CHOOSE_O%" == "3" GOTO O3
 IF /i "%CHOOSE_O%" == "2" GOTO O2
 IF /i "%CHOOSE_O%" == "1" GOTO O1
-IF /i "%CHOOSE_X%" == "69" call secret.bat
+IF /i "%CHOOSE_X%" == "69" call Secret.bat
 GOTO OCHOOSE
 
 :O1

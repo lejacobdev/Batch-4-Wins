@@ -7,13 +7,13 @@ color %Farbe%
 cls
 echo.
 echo.
-echo                                          %men1%Spiel starten%men2%
+echo                                          %men1%Start Game%men2%
 echo.
-echo                                          %men3%Einstellungen%men4%
+echo                                          %men3%Settings%men4%
 echo.
 echo                                          %men5%Credits%men6%
 echo.
-echo                                          %men7%Beenden%men8%
+echo                                          %men7%SUS Mode%men8%
 if "%MenuAnimation1%"=="1" goto Choice
 set men1=(&&set men2=)&&set men3= &&set men4= &&set men5= &&set men6= &&set men7= &&set men8= &&set MenuAnimation1=1&&goto GUIMenu
 :Choice
@@ -28,8 +28,9 @@ if errorlevel 0 goto GUIMenu
 
 :GUIMenuwahl
 if "%men1%"=="(" goto Start
-if "%men3%"=="(" goto Einstellungen
+if "%men3%"=="(" goto Settings
 if "%men5%"=="(" goto Credits
+if "%men7%"=="(" goto SUS1
 goto GUIMenu
 
 :GUIMenurunter
@@ -48,10 +49,42 @@ goto GUIMenu
 cls
 call Game.bat
 
-:Einstellungen
+:Settings
 cls
-call Einstellungen.bat
+call Settings.bat
 
 :Credits
 cls
 call Credits.bat
+
+:SUS
+cls
+echo SUS MODE Activaded
+timeout 2 > nul
+cls
+call SUS_MODE_GAME.bat
+
+:SUS1
+cls
+echo Are you sure?
+set /p JA/NEIN=(Y/N):
+if %JA/NEIN%==y goto SUS2
+if %JA/NEIN%==n goto GUIMenu
+timeout 2 > nul
+cls
+
+:SUS2
+echo Are you REALLY sure?
+set /p JA/NEIN=(Y/N):
+if %JA/NEIN%==y goto SUS3
+if %JA/NEIN%==n goto GUIMenu
+timeout 2 > nul
+cls
+
+:SUS3
+echo Are you 100%% sure?
+set /p JA/NEIN=(Y/N):
+if %JA/NEIN%==y goto SUS
+if %JA/NEIN%==n goto GUIMenu
+timeout 2 > nul
+cls
