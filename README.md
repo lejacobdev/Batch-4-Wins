@@ -1,6 +1,8 @@
 # Batch 4 Wins
 2-Player 4 Wins programmed in Batch.
 
+Goal: The first player who have 4 in a row wins! (Vertical, Horizontal, Diagonal)
+
 Open the "Start Game.bat" file to start the game.
 
 Use the "W" and "S" keys to navigate through the menu. You can confirm your selection with "E" or "Q".
