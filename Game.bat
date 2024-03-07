@@ -66,7 +66,7 @@ echo.
 echo.
 echo 2-Player 4 Wins programmed in Batch.
 echo. 
-echo Goal: The first player who have 4 in a row (Vertical, Horizontal, Diagonal)
+echo Goal: The first player who have 4 in a row wins! (Vertical, Horizontal, Diagonal)
 echo. 
 echo Open the "Start Game.bat" file to start the game.
 echo. 
