@@ -1,7 +1,6 @@
-# Batch-4-Gewinnt
-2-Spieler 4 Gewinnt in Batch programmiert.
+# Batch 4 Wins
+2-Player 4 Wins programmed in Batch.
 
-Öffne die "Start Game.bat" Datei zum starten des Spiels.
+Open the "Start Game.bat" file to start the game.
 
-
-Nutze die Tasten "W" und "S" zum navigieren im Menü. Du kannst deine Auswahl mit "E" oder "Q" bestätigen.
+Use the "W" and "S" keys to navigate through the menu. You can confirm your selection with "E" or "Q".
