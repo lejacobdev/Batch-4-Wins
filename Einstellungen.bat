@@ -57,7 +57,7 @@ echo Hintergrund: Schwarz(0), DBlau(1), DGruen(2), Blaugruen(3), Rot(4), Lila(5)
 echo Orcker(6), HGrau(7), DGrau(8), Blau(9). 
 echo.
 echo Buchstaben: Gruen(a), Zyan(b), Rot(c), Magenta(d), Gelb(e), Weiß(f).
-echo Zurück zu den Einstellungen: end
+echo Zurueck zu den Einstellungen: end
 set /p Farbe=Farbe:
 echo %Farbe%>color.txt
 if %Farbe%==0a color 0a 
