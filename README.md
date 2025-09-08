@@ -1,5 +1,5 @@
-# Batch 4 Wins
-2-Player 4 Wins programmed in Batch.
+# Batch Connect 4
+2-Player Connect 4 programmed in Batch.
 
 Goal: The first player who have 4 in a row wins! (Vertical, Horizontal, Diagonal)
 
